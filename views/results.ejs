@@ -13,20 +13,25 @@
     <div class="outer">
         <nav>
             <p><a class="brand" href="/">Sentimiento</a></p>
+            <p><a class="anchor" href="/user">User Analysis</a></p>
         </nav>
         <div class="form-outer">
             <form action="/" method="POST">
                 <input id="topic" required name="topic" placeholder="Enter your topic" type="text">
                 <button>Get results</button>
               </form>
+              
         </div>
         <h1>Results for <%= topic %> are</h1>
         <h1 class="result"><%= singleCounter %></h1>
-        <small>Results are different on reload as twitter api is collecting random tweets from this topic</small>
 
         <div class="scale">
             <h2>Scale for reference</h2>
             <img width="100%" src="/images/scale.svg" alt="">
+        </div>
+
+        <div class="extra-info">
+        <small>Results are different on reload as twitter api is collecting random tweets from this topic</small>
         </div>
 
         

@@ -11,30 +11,45 @@
  
 <body>
     <div class="outer">
-        <h1 class="heading">Sentimiento</h1>
-    <p class="subheading">Uses twitter api to do sentimental analysis on tweets using NLP</p>
-    <div class="form-outer2">
-        <form action="/" method="POST">
-            <label for="topic">Enter topic name</label><br>
-            <input id="topic" name="topic" required placeholder="Enter your topic" type="text">
-            <br>
-            <button>Get results</button>
-          </form>
-    </div>
-    <div style="text-align:center; padding-top:64px">
-      <a class="anchor" href="/user">Sentimiento for user</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+        <nav>
+            <p><a class="brand" href="/">Sentimiento</a></p>
+            <p><a class="anchor" href="/">Topic Analysis</a></p>
+        </nav>
+        <div class="form-outer">
+            <form action="/user" method="POST">
+                <input id="username" required name="username" placeholder="Enter username" type="text">
+                <button>Get results</button>
+              </form>
+        </div>
+        <div class="profile">
+            <img style="padding-right:12px; width:50px; height:50px" src="<%= timg %>" alt="">
+            <div>
+                <h2 style="margin-top:0px; margin-bottom:0px;"><%= tname %></h2>
+            <small style="margin-bottom:16px;"><%= username %></small>
+            </div>
+        </div>
+            
+            
+  
+        <p><i style="padding-right:12px;" class="bi bi-geo-alt-fill"></i><%= tlocation %></p>
+        
+        <h2 style="padding-top:32px;">Results are</h2>
+        <h1 class="result"><%= userCounter %></h1>
+        
+        
+
+        <div class="scale">
+            <h2>Scale for reference</h2>
+            <img width="100%" src="/images/scale.svg" alt="">
+        </div>
+        <div class="extra-info">
+            <small>Results after analyzing users recent tweets and retweets</small><br><br>
+        <small>Results are different on reload as twitter api is collecting random tweets from this topic</small>
+        </div>
+
+        
     </div>
     
-    </div>
-
-    <!-- This is extra data, glad you are here :) -->
-    <!-- This is extra data, glad you are here :) -->
-    <!-- This is extra data, glad you are here :) -->
-    <!-- This is extra data, glad you are here :) -->
-    <!-- This is extra data, glad you are here :) -->
-    <!-- This is extra data, glad you are here :) -->
-    <!-- This is extra data, glad you are here :) -->
-    <!-- This is extra data, glad you are here :) -->
 </body>
 <script type="module">
     // Import the functions you need from the SDKs you need

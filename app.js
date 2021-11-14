@@ -27,6 +27,49 @@ var T = new Twit({
     access_token_secret:  process.env.ACCESS_TOKEN_SECRET,
   })
 
+  app.get('/user', (req, res) => {
+    res.render('user');
+})
+
+app.post('/user', (req, res)=>{
+  var userArr = [];
+  var tname;
+  var tlocation;
+  var timg;
+  var userCounter = 0;
+  const {username} = req.body;
+  var options = { screen_name: `${username}`,
+  count: 50 };
+  T.get('users/show', { screen_name: `${username}`}, function (err, data, response) {
+      if (err) {
+          error = data.errors[0]["message"]
+          res.render("useragain", {error})
+          return
+      }  
+      tname = data.name;
+      tlocation = data.location || "Not found" ;
+      timg = data.profile_image_url;
+
+  });
+
+  T.get('statuses/user_timeline', options , function(err, data) {
+      for (var i = 0; i < data.length ; i++) {  
+        userArr.push(data[i].text);
+      }
+      userArr.forEach(function(s){
+          var x = sentiment.analyze(s);
+          if(x.score < 0){
+              userCounter--;
+          }
+          if(x.score > 0){
+              userCounter++;
+          }
+      })
+      res.render('userresults', {username, userCounter, tname, tlocation, timg});
+    })
+  
+})
+
   app.get('/', (req, res)=>{
     res.render("home")
   })
@@ -57,6 +100,8 @@ var singleCounter = 0;
         //console.log(sentiment.analyze(text))
       })
   })
+
+
 
 
 

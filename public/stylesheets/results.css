@@ -27,6 +27,21 @@ body{
 
 .subheading{
     text-align: center;
+    opacity: 0.5;
+}
+.h2tag{
+    text-align: center;
+}
+
+.error{
+    width:100%;
+    background-color: #EB5757;
+    color:white;
+    border-radius: 8px;
+}
+.error p{
+    text-align: center;
+    padding:12px 0px;
 }
 
 .outer{
@@ -34,10 +49,20 @@ body{
     margin:auto;
 }
 
-nav{
+.profile{
+    display: flex;
+    padding-top:24px;
+    padding-bottom:4px;
+}
 
-    font-size: 24px;
-    font-weight:bold;
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.extra-info{
+    padding-top:64px;
 }
 
 .topicstyle{
@@ -59,6 +84,14 @@ nav{
     padding:64px 0px;
     width:60%;
     margin:auto;
+}
+
+.anchor{
+    text-decoration: none;
+    cursor: pointer;
+    color:rgb(223, 118, 255);
+    font-weight: bold;
+    
 }
 
 form{
@@ -113,6 +146,8 @@ button{
   .brand{
       color:white;
       text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
   }
   .scale img{
     width:40%;
