@@ -33,5 +33,28 @@
     </div>
     
 </body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyC-benVr55jmqm8YAcAdp6P0hSeN-_y33E",
+      authDomain: "sentimiento-ab.firebaseapp.com",
+      projectId: "sentimiento-ab",
+      storageBucket: "sentimiento-ab.appspot.com",
+      messagingSenderId: "855861226745",
+      appId: "1:855861226745:web:84c8ad8c6d3b44cdedc628",
+      measurementId: "G-FJWCXZ20B1"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
  
 </html>  
