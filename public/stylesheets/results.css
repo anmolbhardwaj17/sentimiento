@@ -51,7 +51,7 @@ nav{
 
 .form-outer{
     padding:24px 0px;
-    width:100%;
+    width:50%;
     margin:auto;
 }
 
@@ -132,5 +132,8 @@ button{
     }
     input{
         width:98%;
+    }
+    .form-outer{
+        width:100%;
     }
   }
