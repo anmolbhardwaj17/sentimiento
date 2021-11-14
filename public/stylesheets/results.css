@@ -57,6 +57,8 @@ nav{
 
 .form-outer2{
     padding:64px 0px;
+    width:60%;
+    margin:auto;
 }
 
 form{
@@ -121,5 +123,14 @@ button{
   @media(max-width:455px){
     .outer{
         width:90%;
+    }
+    .form-outer2{
+        width:100%;
+    }
+    .heading{
+        font-size:48px;
+    }
+    input{
+        width:98%;
     }
   }
