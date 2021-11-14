@@ -52,7 +52,7 @@ nav{
 .form-outer{
     padding:24px 0px;
     width:50%;
-    margin:auto;
+    
 }
 
 .form-outer2{
@@ -114,6 +114,9 @@ button{
       color:white;
       text-decoration: none;
   }
+  .scale img{
+    width:60%;
+}
 
   
   .scale{
@@ -134,6 +137,9 @@ button{
         width:98%;
     }
     .form-outer{
+        width:100%;
+    }
+    .scale img{
         width:100%;
     }
   }
