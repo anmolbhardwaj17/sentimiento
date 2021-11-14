@@ -20,6 +20,15 @@ body{
     font-family: 'Gilroy';
 }
 
+.heading{
+    text-align: center;
+    font-size:64px;
+}
+
+.subheading{
+    text-align: center;
+}
+
 .outer{
     width:80%;
     margin:auto;
@@ -46,11 +55,15 @@ nav{
     margin:auto;
 }
 
+.form-outer2{
+    padding:64px 0px;
+}
+
 form{
     width:100%;
 }
 input{
-    width:30%;
+    width:100%;
     border-radius: 8px;
     background:none;
     border:2px solid rgb(223, 118, 255);
@@ -65,7 +78,7 @@ input:focus {
 }
 
 button{
-    width:30%;
+    width:100%;
     padding:18px 4px;
     text-align: center;
     background-color:white;
@@ -108,12 +121,5 @@ button{
   @media(max-width:455px){
     .outer{
         width:90%;
-    }
-    input{
-        width:100%;
-    }
-
-    button{
-        width:100%;
     }
   }
