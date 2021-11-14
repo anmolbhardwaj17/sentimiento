@@ -1,0 +1,119 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css");
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy'), url(/fonts/Gilroy-Bold.ttf) format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('MyFont'), url(/fonts/Gilroy-Medium.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+    background: linear-gradient(90.19deg, #001A4D -1.87%, #19002F 105.18%);
+    color:white;
+    font-family: 'Gilroy';
+}
+
+.outer{
+    width:80%;
+    margin:auto;
+}
+
+nav{
+
+    font-size: 24px;
+    font-weight:bold;
+}
+
+.topicstyle{
+    font-weight:bold;
+}
+
+.result{
+    font-size:80px;
+    margin:8px 0px;
+}
+
+.form-outer{
+    padding:24px 0px;
+    width:100%;
+    margin:auto;
+}
+
+form{
+    width:100%;
+}
+input{
+    width:30%;
+    border-radius: 8px;
+    background:none;
+    border:2px solid rgb(223, 118, 255);
+    padding:16px 4px;
+    margin:8px 8px 0px 0px;
+    color:white
+}
+
+
+input:focus {
+    outline: none;
+}
+
+button{
+    width:30%;
+    padding:18px 4px;
+    text-align: center;
+    background-color:white;
+    color:black;
+    margin:8px 0px;
+    border:none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.about{
+    padding-top:48px;
+}
+
+.about-text{
+    color: rgb(190, 190, 190);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 255, 255);
+    opacity: 0.5; /* Firefox */
+    padding-left:8px;
+  }
+
+  small{
+      opacity: 0.3;
+      cursor:pointer;
+  }
+
+  .brand{
+      color:white;
+      text-decoration: none;
+  }
+
+  
+  .scale{
+      padding-top:64px;
+  }
+
+  @media(max-width:455px){
+    .outer{
+        width:90%;
+    }
+    input{
+        width:100%;
+    }
+
+    button{
+        width:100%;
+    }
+  }
