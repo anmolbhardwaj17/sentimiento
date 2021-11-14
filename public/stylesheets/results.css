@@ -18,7 +18,15 @@ body{
     background: linear-gradient(90.19deg, #001A4D -1.87%, #19002F 105.18%);
     color:white;
     font-family: 'Gilroy';
-    min-height: 100vh;
+}
+
+.heading{
+    text-align: center;
+    font-size:64px;
+}
+
+.subheading{
+    text-align: center;
 }
 
 .outer{
@@ -42,21 +50,25 @@ nav{
 }
 
 .form-outer{
-    padding:12px 0px;
+    padding:24px 0px;
     width:100%;
     margin:auto;
+}
+
+.form-outer2{
+    padding:64px 0px;
 }
 
 form{
     width:100%;
 }
 input{
-    width:30%;
+    width:100%;
     border-radius: 8px;
     background:none;
     border:2px solid rgb(223, 118, 255);
     padding:16px 4px;
-    margin:8px 8px 8px 0px;
+    margin:8px 16px 16px 0px;
     color:white
 }
 
@@ -66,7 +78,7 @@ input:focus {
 }
 
 button{
-    width:30%;
+    width:100%;
     padding:18px 4px;
     text-align: center;
     background-color:white;
@@ -109,12 +121,5 @@ button{
   @media(max-width:455px){
     .outer{
         width:90%;
-    }
-    input{
-        width:100%;
-    }
-
-    button{
-        width:100%;
     }
   }
