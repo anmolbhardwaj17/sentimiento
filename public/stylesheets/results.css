@@ -15,8 +15,8 @@
 }
 
 body{
-    background: linear-gradient(90.19deg, #001A4D -1.87%, #19002F 105.18%);
-    color:white;
+    background: #ffffff;
+    color:#000000;
     font-family: 'Gilroy';
 }
 
@@ -89,7 +89,7 @@ nav{
 .anchor{
     text-decoration: none;
     cursor: pointer;
-    color:rgb(223, 118, 255);
+    color:#1C9CEA;
     font-weight: bold;
     
 }
@@ -98,13 +98,13 @@ form{
     width:100%;
 }
 input{
-    width:100%;
+    width:97%;
     border-radius: 8px;
     background:none;
-    border:2px solid rgb(223, 118, 255);
+    border:2px solid rgb(122, 122, 122);
     padding:16px 4px;
     margin:8px 16px 16px 0px;
-    color:white
+    color:#000000;
 }
 
 
@@ -116,8 +116,8 @@ button{
     width:100%;
     padding:18px 4px;
     text-align: center;
-    background-color:white;
-    color:black;
+    background-color:#1C9CEA;
+    color:rgb(255, 255, 255);
     margin:8px 0px;
     border:none;
     border-radius: 8px;
@@ -129,11 +129,11 @@ button{
 }
 
 .about-text{
-    color: rgb(190, 190, 190);
+    color: rgb(122, 122, 122);
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: rgb(255, 255, 255);
+    color: rgb(122, 122, 122);
     opacity: 0.5; /* Firefox */
     padding-left:8px;
   }
@@ -144,7 +144,7 @@ button{
   }
 
   .brand{
-      color:white;
+      color:rgb(0, 0, 0);
       text-decoration: none;
       font-size: 16px;
       font-weight: bold;
